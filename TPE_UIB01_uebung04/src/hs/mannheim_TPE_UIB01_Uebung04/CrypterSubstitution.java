@@ -22,14 +22,13 @@ public class CrypterSubstitution implements Crypter {
 		 	       String alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 		 	 
 		 	       for(int i = 0; i < alphabet.length(); ++i) {
-		 	          map.put(key.charAt(i), alphabet.charAt(i));
+		 	          map.put(alphabet.charAt(i), key.charAt(i));
 		 	       }
-		 	       System.out.println(map.get(key));
+		 	       
 		 	       String a = new String(""); 
 		 	       for(int k = 0; k < message.length(); k++) {
-		 	    	  
-		 	    	   //System.out.println(map.get(key));
-		 	    	  //a += Character.toString(map.get(key)) ;
+		 	    	  char c = message.charAt(k);
+		 	    	  a += Character.toString(map.get(c)) ;
 		 	       }
 		 	       return a;
 		 	  
