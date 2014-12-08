@@ -16,7 +16,7 @@ import java.util.List;
  *  alle anderen Zeichen werden ohne Ruckmeldung entfernt ( einschlielich der
  *  Leerzeichen ).
  *          
- *   Zwischen den beiden Methoden muss bei gleichem Schlussel {@code key }folgendes
+ *   Zwischen den beiden Methoden muss bei gleichem Schlüssel {@code key }folgendes
  *    gelten :{@code text . equals ( decrypt ( encrypt ( text )) == true }.
  
  @author Thomas Smits
